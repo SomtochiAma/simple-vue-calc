@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div id="calc">
         <div id="display">
-            <div id="display-result">{{ current }}</div>
-            <div id="display-current">{{ result }}</div>
+            <div id="display-current">{{ current }}</div>
+            <div id="display-result">{{ result }}</div>
         </div>
-        <button class="keypad" data-key="1" v-on:click="press">1</button>
-        <button class="keypad" data-key="2" v-on:click="press">2</button>
-        <button class="keypad" data-key="3" v-on:click="press">3</button>
-        <button class="keypad" data-key="4" v-on:click="press">4</button>
-        <button class="keypad" data-key="5" v-on:click="press">5</button>
-        <button class="keypad" data-key="6" v-on:click="press">6</button>
-        <button class="keypad" data-key="7" v-on:click="press">7</button>
-        <button class="keypad" data-key="8" v-on:click="press">8</button>
-        <button class="keypad" data-key="9" v-on:click="press">9</button>
-        <button class="keypad" data-key="0" v-on:click="press">0</button>
-        <button class="keypad" data-key="(" v-on:click="press">(</button>
-        <button class="keypad" data-key=")" v-on:click="press">)</button>
-        <button class="keypad" data-key="+" v-on:click="press">+</button>
-        <button class="keypad" data-key="-" v-on:click="press">-</button>
-        <button class="keypad" data-key="/" v-on:click="press">/</button>
-        <button class="keypad" data-key="*" v-on:click="press">*</button>
-        <button class="keypad" data-key="=" v-on:click="equals">=</button>
-        <button class="keypad" data-key="√" v-on:click="sqrt">√</button>
-        <button class="keypad" data-key="²" v-on:click="square">x²</button>
-        <button class="keypad" v-on:click="clearDisplay">C</button>
-        <button class="keypad" v-on:click="lastAns">ANS</button>
-        <button class="keypad" v-on:click="del">⌫</button>
+        <div class="buttons">
+            <div class="keypad" data-key="1" v-on:click="press">1</div>
+            <div class="keypad" data-key="2" v-on:click="press">2</div>
+            <div class="keypad" data-key="3" v-on:click="press">3</div>
+            <div class="keypad" data-key="-" v-on:click="press">-</div>
+            <div class="keypad" data-key="4" v-on:click="press">4</div>
+            <div class="keypad" data-key="5" v-on:click="press">5</div>
+            <div class="keypad" data-key="6" v-on:click="press">6</div>
+            <div class="keypad" data-key="+" v-on:click="press">+</div>
+            <div class="keypad" data-key="7" v-on:click="press">7</div>
+            <div class="keypad" data-key="8" v-on:click="press">8</div>
+            <div class="keypad" data-key="9" v-on:click="press">9</div>
+            <div class="keypad" data-key="*" v-on:click="press">*</div>
+            <div class="keypad" data-key="0" v-on:click="press">0</div>
+            <div class="keypad" data-key="(" v-on:click="press">(</div>
+            <div class="keypad" data-key=")" v-on:click="press">)</div>
+            <div class="keypad" data-key="/" v-on:click="press">/</div>
+            <div class="keypad" data-key="√" v-on:click="sqrt">√</div>
+            <div class="keypad" data-key="²" v-on:click="square">x²</div>
+            <div class="keypad" v-on:click="clearDisplay">C</div>
+            <div class="keypad" v-on:click="lastAns">ANS</div>
+            <div class="keypad" data-key="=" v-on:click="equals">=</div>
+            <div class="keypad" v-on:click="del">⌫</div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
