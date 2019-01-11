@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-family: 'Major Mono Display'
 }
 
 #calc {
@@ -13,6 +16,7 @@ body {
     padding: 20px;
     border: 6px solid black;
     border-radius: 20px;
+    
 }
 
 .buttons {
@@ -36,7 +40,7 @@ body {
 }
 
 #display-result {
-    font-size: 40px;
+    font-size: 30px;
     text-align: end;
 }
 
@@ -55,6 +59,7 @@ body {
     justify-content: center;
     font-size: 24px;
     transition: all 0.3s;
+    font-weight: bold;
 }
 
 .keypad:hover {
